@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "806573969478",
+    "project_id": "dumy-c76bc",
+    "storage_bucket": "dumy-c76bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806573969478:android:52b3b1ee3567f994e4ba47",
+        "android_client_info": {
+          "package_name": "com.example.firebase_batch40"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD98VbeodO89xQG1dOadVGFbyD76d5tuWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806573969478:android:927cf9e30c481e02e4ba47",
+        "android_client_info": {
+          "package_name": "com.maliktech.firebase_dumy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD98VbeodO89xQG1dOadVGFbyD76d5tuWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
