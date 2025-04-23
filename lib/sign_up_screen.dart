@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_batch40/views/auth_module/log_in.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -92,6 +93,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 child: isLoading ? Center(child: CircularProgressIndicator(color: Colors.white,)) : Center(child: Text('Sign up',style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)),
               ),
+            ),
+            SizedBox(height: 30,),
+            GestureDetector(
+              onTap: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+              },
+              child: RichText(text: TextSpan(
+                  children: [
+                    TextSpan(text: "Do you have already account ? ",style: TextStyle(color: Colors.black87)),
+                    TextSpan(text: "Login",style: TextStyle(color: Colors.blue,fontSize: 18,fontWeight: FontWeight.bold))
+                  ]
+              )),
             ),
           ],
         ),
