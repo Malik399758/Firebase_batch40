@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_batch40/views/auth_module/log_in.dart';
+import 'package:firebase_batch40/views/home_module/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -63,6 +64,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       SnackBar(
                           backgroundColor: Colors.green,
                           content: Text('Account Created Sucessfull!')));
+
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
 
                   print('User id -------->${userId.user!.uid}');
                   setState(() {

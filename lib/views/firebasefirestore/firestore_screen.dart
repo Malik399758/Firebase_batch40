@@ -34,6 +34,22 @@ class _FirestoreScreenState extends State<FirestoreScreen> {
     }
   }
 
+  Future<void> delete()async{
+    await FirebaseAuth.instance.signOut();
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Sign out')));
+  }
+
+  Future<void> delete1()async{
+    User? user = await FirebaseAuth.instance.currentUser;
+    if(user != null){
+      await user.delete();
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('delete out')));
+    }else{
+      print('User not exists');
+    }
+
+  }
+
 
 
   @override
@@ -138,9 +154,9 @@ class _FirestoreScreenState extends State<FirestoreScreen> {
                   borderRadius: BorderRadius.circular(12),
                   color: Colors.blue
                 ),
-                child: isLoading ? Center(child: CircularProgressIndicator()) : Center(child: Text('Register',style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)),
+                child: isLoading ? Center(child: CircularProgressIndicator(color: Colors.white,)) : Center(child: Text('Register',style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)),
               ),
-            )
+            ),
           ],
         ),
       ),
