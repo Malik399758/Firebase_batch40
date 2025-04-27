@@ -1,6 +1,5 @@
-import 'package:firebase_batch40/sign_up_screen.dart';
-import 'package:firebase_batch40/views/auth_module/log_in.dart';
-import 'package:firebase_batch40/views/crud/crud_screen.dart';
+
+import 'package:firebase_batch40/views/crud_module/crud_operations_screen.dart';
 import 'package:firebase_batch40/views/firebasefirestore/firestore_screen.dart';
 import 'package:firebase_batch40/views/pagination/pagination_screen.dart';
 import 'package:firebase_batch40/views/theme_module/theme_provider.dart';
@@ -34,7 +33,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: themeProvider.themeData,
-      home: CrudScreen()
+      home: CrudOperationsScreen(),
+      //CrudScreen()
       //SignUpScreen()
       //SignUpScreen()
       // You can replace with: FirestoreScreen(), PaginationScreen(), LoginScreen(), SignUpScreen()
